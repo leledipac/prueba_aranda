@@ -19,8 +19,8 @@ public class Delete : EndpointBaseAsync
 
   [HttpDelete(DeleteProductoRequest.Route)]
   [SwaggerOperation(
-      Summary = "Deletes a Producto",
-      Description = "Deletes a Producto",
+      Summary = "Elimina un producto",
+      Description = "Elimina un producto",
       OperationId = "Productos.Delete",
       Tags = new[] { "ProductoEndpoints" })
   ]

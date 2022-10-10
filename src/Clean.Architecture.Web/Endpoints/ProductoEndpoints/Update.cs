@@ -19,9 +19,9 @@ public class Update : EndpointBaseAsync
 
   [HttpPut(UpdateProductoRequest.Route)]
   [SwaggerOperation(
-      Summary = "Updates a Producto",
-      Description = "Updates a Producto with a longer description",
-      OperationId = "Producto.Update",
+      Summary = "Actualiza un producto",
+      Description = "Actualiza un producto",
+      OperationId = "Productos.Update",
       Tags = new[] { "ProductoEndpoints" })
   ]
   public override async Task<ActionResult<UpdateProductoResponse>> HandleAsync(

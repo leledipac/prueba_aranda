@@ -19,9 +19,9 @@ public class List : EndpointBaseAsync
 
   [HttpGet("/Productos")]
   [SwaggerOperation(
-      Summary = "Gets a list of all Products",
-      Description = "Gets a list of all Products",
-      OperationId = "Products.List",
+      Summary = "Obtiene una lista de todos los productos",
+      Description = "Obtiene una lista de todos los productos",
+      OperationId = "Productos.List",
       Tags = new[] { "ProductoEndpoints" })
   ]
   public override async Task<ActionResult<ProductoListResponse>> HandleAsync(

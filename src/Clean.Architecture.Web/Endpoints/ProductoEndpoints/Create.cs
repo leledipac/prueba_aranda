@@ -17,10 +17,10 @@ public class Create : EndpointBaseAsync
     _repository = repository;
   }
 
-  [HttpPost("/Projects")]
+  [HttpPost("/Productos")]
   [SwaggerOperation(
-    Summary = "Creates a new Producto",
-    Description = "Creates a new Producto",
+    Summary = "Crea un nuevo producto",
+    Description = "Crea un nuevo producto",
     OperationId = "Productos.Create",
     Tags = new[] { "ProductoEndpoints" })
   ]

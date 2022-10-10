@@ -20,10 +20,10 @@ public class GetById : EndpointBaseAsync
 
   [HttpGet(GetProductoByIdRequest.Route)]
   [SwaggerOperation(
-    Summary = "Gets a single Project",
-    Description = "Gets a single Project by Id",
+    Summary = "Obtiene un unico producto",
+    Description = "Obtiene un unico producto por Id",
     OperationId = "Productos.GetById",
-    Tags = new[] { "ProjectEndpoints" })
+    Tags = new[] { "ProductoEndpoints" })
   ]
   public override async Task<ActionResult<GetProductoByIdResponse>> HandleAsync(
     [FromRoute] GetProductoByIdRequest request,
