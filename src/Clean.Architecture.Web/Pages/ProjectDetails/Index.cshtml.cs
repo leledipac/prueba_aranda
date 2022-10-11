@@ -1,6 +1,7 @@
-﻿using Clean.Architecture.Core.Productos.Entities;
+﻿
 using Clean.Architecture.Core.Productos.Specifications;
 using Clean.Architecture.SharedKernel.Interfaces;
+using Clean.Architecture.SharedKernel.Repositorio;
 using Clean.Architecture.Web.ApiModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -9,7 +10,7 @@ namespace Clean.Architecture.Web.Pages.ProjectDetails;
 
 public class IndexModel : PageModel
 {
-  private readonly IRepository<Producto> _repository;
+  private readonly IRepositorioProducto _repository;
 
   [BindProperty(SupportsGet = true)]
   public int ProductoId { get; set; }
@@ -18,7 +19,7 @@ public class IndexModel : PageModel
 
   public ProductoDTO? Producto { get; set; }
 
-  public IndexModel(IRepository<Producto> repository)
+  public IndexModel(IRepositorioProducto repository)
   {
     _repository = repository;
   }

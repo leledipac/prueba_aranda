@@ -1,6 +1,7 @@
 ﻿using Ardalis.ApiEndpoints;
-using Clean.Architecture.Core.Productos.Entities;
+using Clean.Architecture.SharedKernel.Entities;
 using Clean.Architecture.SharedKernel.Interfaces;
+using Clean.Architecture.SharedKernel.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -10,9 +11,9 @@ public class Create : EndpointBaseAsync
   .WithRequest<CreateProductoRequest>
   .WithActionResult<CreateProductoResponse>
 {
-  private readonly IRepository<Producto> _repository;
+  private readonly IRepositorioProducto _repository;
 
-  public Create(IRepository<Producto> repository)
+  public Create(IRepositorioProducto repository)
   {
     _repository = repository;
   }

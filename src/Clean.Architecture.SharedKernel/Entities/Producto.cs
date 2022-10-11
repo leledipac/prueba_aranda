@@ -4,13 +4,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using Ardalis.GuardClauses;
 using System.Xml.Linq;
 using Clean.Architecture.SharedKernel;
 using Clean.Architecture.SharedKernel.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
-namespace Clean.Architecture.Core.Productos.Entities;
+namespace Clean.Architecture.SharedKernel.Entities;
 public class Producto:EntityBase, IAggregateRoot
 {
   //public Producto()
@@ -43,18 +42,18 @@ public class Producto:EntityBase, IAggregateRoot
 
   public void UpdateNombre(string newValue)
   {
-    Nombre = Guard.Against.NullOrEmpty(newValue, nameof(newValue));
+    Nombre = newValue;
   }
   public void UpdateDescripcion(string newValue)
   {
-    Descripcion = Guard.Against.NullOrEmpty(newValue, nameof(newValue));
+    Descripcion = newValue;
   }
   public void UpdateCategoria(string newValue)
   {
-    Categoria = Guard.Against.NullOrEmpty(newValue, nameof(newValue));
+    Categoria = newValue;
   }
   public void UpdateImagen(string? newValue)
   {
-    Imagen = Guard.Against.NullOrEmpty(newValue, nameof(newValue));
+    Imagen = newValue;
   }
 }

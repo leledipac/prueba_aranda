@@ -1,5 +1,5 @@
-﻿using Clean.Architecture.Core.Productos.Entities;
-using Clean.Architecture.SharedKernel;
+﻿using Clean.Architecture.SharedKernel;
+using Clean.Architecture.SharedKernel.Entities;
 
 namespace Clean.Architecture.Core.Productos.Events;
 

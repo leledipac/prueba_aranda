@@ -1,4 +1,5 @@
-﻿using Clean.Architecture.Core.Productos.Entities;
+﻿
+using Clean.Architecture.SharedKernel.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

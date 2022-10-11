@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 using Autofac;
 using Clean.Architecture.Core.Interfaces;
-using Clean.Architecture.Core.Productos.Entities;
 using Clean.Architecture.Infrastructure.Data;
 using Clean.Architecture.SharedKernel;
+using Clean.Architecture.SharedKernel.Entities;
 using Clean.Architecture.SharedKernel.Interfaces;
 using MediatR;
 using MediatR.Pipeline;

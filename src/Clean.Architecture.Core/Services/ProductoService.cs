@@ -1,16 +1,17 @@
 ﻿using Ardalis.Result;
-using Clean.Architecture.Core.Productos.Entities;
 using Clean.Architecture.Core.Interfaces;
 using Clean.Architecture.Core.Productos.Specifications;
 using Clean.Architecture.SharedKernel.Interfaces;
+using Clean.Architecture.SharedKernel.Entities;
+using Clean.Architecture.SharedKernel.Repositorio;
 
 namespace Clean.Architecture.Core.Services;
 
 public class ProductoService : IProductoService
 {
-  private readonly IRepository<Producto> _repository;
+  private readonly IRepositorioProducto _repository;
 
-  public ProductoService(IRepository<Producto> repository)
+  public ProductoService(IRepositorioProducto repository)
   {
     _repository = repository;
   }

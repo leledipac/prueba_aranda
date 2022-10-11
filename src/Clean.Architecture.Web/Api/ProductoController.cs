@@ -1,5 +1,6 @@
-﻿using Clean.Architecture.Core.Productos.Entities;
+﻿
 using Clean.Architecture.Core.Productos.Specifications;
+using Clean.Architecture.SharedKernel.Entities;
 using Clean.Architecture.SharedKernel.Interfaces;
 using Clean.Architecture.Web.ApiModels;
 using Microsoft.AspNetCore.Mvc;

@@ -1,6 +1,7 @@
-﻿using Clean.Architecture.Core.Productos.Entities;
+﻿
 using Clean.Architecture.Core.Productos.Specifications;
 using Clean.Architecture.SharedKernel.Interfaces;
+using Clean.Architecture.SharedKernel.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -8,13 +9,13 @@ namespace Clean.Architecture.Web.Pages.ProjectDetails;
 
 public class IncompleteModel : PageModel
 {
-  private readonly IRepository<Producto> _repository;
+  private readonly IRepositorioProducto _repository;
 
   [BindProperty(SupportsGet = true)]
   public int ProjectId { get; set; }
 
 
-  public IncompleteModel(IRepository<Producto> repository)
+  public IncompleteModel(IRepositorioProducto repository)
   {
     _repository = repository;
   }

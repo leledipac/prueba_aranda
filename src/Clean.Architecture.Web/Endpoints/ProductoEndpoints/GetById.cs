@@ -1,7 +1,8 @@
 ﻿using Ardalis.ApiEndpoints;
-using Clean.Architecture.Core.Productos.Entities;
 using Clean.Architecture.Core.Productos.Specifications;
+using Clean.Architecture.SharedKernel.Entities;
 using Clean.Architecture.SharedKernel.Interfaces;
+using Clean.Architecture.SharedKernel.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -11,9 +12,9 @@ public class GetById : EndpointBaseAsync
   .WithRequest<GetProductoByIdRequest>
   .WithActionResult<GetProductoByIdResponse>
 {
-  private readonly IRepository<Producto> _repository;
+  private readonly IRepositorioProducto _repository;
 
-  public GetById(IRepository<Producto> repository)
+  public GetById(IRepositorioProducto repository)
   {
     _repository = repository;
   }

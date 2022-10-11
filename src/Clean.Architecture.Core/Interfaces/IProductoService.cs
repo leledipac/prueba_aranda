@@ -1,5 +1,5 @@
 ﻿using Ardalis.Result;
-using Clean.Architecture.Core.Productos.Entities;
+using Clean.Architecture.SharedKernel.Entities;
 
 namespace Clean.Architecture.Core.Interfaces;
 
